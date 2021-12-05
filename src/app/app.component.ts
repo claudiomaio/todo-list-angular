@@ -17,9 +17,9 @@ export class AppComponent {
     this.todoItems.push(this.newItemToAdd);
     this.newItemToAdd = '';
   }
-  
   public title2 = 'Already Done';
   public doneItems: string[] = [];
+  
   public restoreItem(i:number) {
     this.todoItems.push(this.doneItems[i]);
     this.doneItems.splice(i, 1);

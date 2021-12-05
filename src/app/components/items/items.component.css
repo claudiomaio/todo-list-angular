@@ -1,0 +1,42 @@
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding: 10px;
+  height: 50px;
+  line-height: 50px;
+  background-color: rgb(245, 220, 140);
+}
+
+.remove-item-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.done-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding: 10px;
+  height: 50px;
+  line-height: 50px;
+  background-color: coral;
+}
+
+.done-title {
+  text-decoration: line-through;
+}
+
+.restore-item-btn,
+.delete-item-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 12px;
+}

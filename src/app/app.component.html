@@ -9,23 +9,11 @@
     class="add-new-input">
     <button class="add-new-btn" (click)="addItem()">Add new item</button>
   </div>
-
-  <div class="todo-item" *ngFor="let item of todoItems; let i = index">
-    <span>{{item}}</span>
-    <button class="remove-item-btn" (click)="removeItem(i)">x</button>
-  </div>
-  
+  <app-items [items] = "todoItems" (onMove)="removeItem($event)"></app-items>
 </div>
+
 
 <div class= "done-items-container"> 
   <h1>{{title2}}</h1>
-
-  <div class="done-item" *ngFor="let item of doneItems; let i = index">
-    <span>Complete: {{item}}</span>
-    <div>
-      <button class="restore-item-btn" (click)="restoreItem(i)">Restore</button>
-      <button class="delete-item-btn" (click)="deleteItem(i)">Delete</button>
-    </div>
-  </div>
-
+  <app-items [doneItems] = "doneItems" (onRestore)="restoreItem($event)" (onDelete)="deleteItem($event)"></app-items>
 </div>  

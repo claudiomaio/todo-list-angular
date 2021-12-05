@@ -1,0 +1,12 @@
+<div class="item" *ngFor="let item of items; let i = index">
+    <span>{{item}}</span>
+    <button class="remove-item-btn" (click)="moveItem(i)">x</button>
+</div>
+
+<div class="done-item" *ngFor="let item of doneItems; let i = index">
+    <span class="done-title"> {{item}} </span>
+    <div>
+      <button class="restore-item-btn" (click)="restoreItem(i)">Restore</button>
+      <button class="delete-item-btn" (click)="deleteItem(i)">Delete</button>
+    </div>
+</div>

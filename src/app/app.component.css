@@ -7,25 +7,6 @@
   border: solid 2px orange;
 }
 
-.todo-items-container .todo-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 15px;
-  padding: 10px;
-  height: 50px;
-  line-height: 50px;
-  background-color: rgb(245, 220, 140);
-}
-
-.remove-item-btn {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 12px;
-}
-
 .add-new-item {
   display: flex;
   align-items: stretch;
@@ -54,24 +35,4 @@
   padding: 50px;
   margin: 30px auto;
   border: solid 2px rgb(255, 38, 0);
-}
-
-.done-items-container .done-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 15px;
-  padding: 10px;
-  height: 50px;
-  line-height: 50px;
-  background-color: coral;
-}
-
-.restore-item-btn,
-.delete-item-btn {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 12px;
 }
